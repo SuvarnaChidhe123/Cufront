@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Tushar Aher",
+      "speciality": "Speciality",
+      "fees": 200,
+      "availableDates": ["2024-05-22", "2024-05-23"],
+      "slots": ["10:00 AM", "11:00 AM"]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Tejas Paramsagar",
+      "speciality": "Speciality",
+      "fees": 200,
+      "availableDates": ["2024-05-22", "2024-05-24"],
+      "slots": ["10:00 AM", "11:00 AM"]
+    },
+    {
+      "id": 3,
+      "name": "Dr. New TestUser",
+      "speciality": "Speciality",
+      "fees": 200,
+      "availableDates": ["2024-05-22", "2024-05-25"],
+      "slots": ["10:00 AM", "11:00 AM"]
+    },
+    {
+        "id": 4,
+        "name": "Dr. New TestUser",
+        "speciality": "Speciality",
+        "fees": 200,
+        "availableDates": ["2024-05-22", "2024-05-25"],
+        "slots": ["10:00 AM", "11:00 AM"]
+      },
+      {
+        "id": 5,
+        "name": "Dr. New TestUser",
+        "speciality": "Speciality",
+        "fees": 200,
+        "availableDates": ["2024-05-22", "2024-05-25"],
+        "slots": ["10:00 AM", "11:00 AM"]
+      }
+  ]
+  

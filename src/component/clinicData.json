@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Apollo Multispecialist Hospitals", "appointment": 14 },
+    { "id": 2, "name": "Shree Clinic", "appointment": 2 },
+    { "id": 3, "name": "Wellness Clinic", "appointment": 1 },
+    { "id": 4, "name": "Test Clinic", "appointment": 1 },
+    { "id": 5, "name": "HealthWell Clinic", "appointment": 1 }
+
+]
