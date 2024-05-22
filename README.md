@@ -1,4 +1,4 @@
 # Cufront
 Hospital management
 
-start project with first route "/hmoe"
+start project with first route "/home"
