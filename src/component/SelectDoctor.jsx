@@ -5,6 +5,7 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import Clinic from "./Clinic";
 import CarouselCalendar from "./CarouselCalendar";
 import Slots from "./Slots";
+import { FaArrowRight } from 'react-icons/fa';
 
 
 const SelectDoctor = () => {
@@ -16,6 +17,9 @@ const SelectDoctor = () => {
       navigate('/Clinic');
     };
   
+   
+    
+       
 
     const [selectedDoctor, setSelectedDoctor] = useState(null);
     const [selectedDate, setSelectedDate] = useState(null);
@@ -57,19 +61,27 @@ const SelectDoctor = () => {
                 onExited={() => setAnimating(false)}
                 key={doctor.id}
             >
-                <Card onClick={() => handleDoctorClick(doctor)}>
-                    <CardBody className="text-center">
-                        <h5>{doctor.name.charAt(0)}</h5>
+         <Container>
+        <Row >
+            <Col sm={{size:4, offset:4}}>
+                <Card onClick={() => handleDoctorClick(doctor)} style={{border:"none"}}>
+                    <CardBody className="text-center mycard">
+                        <div className="color3"><h5 >{doctor.name.charAt(0)}</h5></div>
                         <CardSubtitle className="font-weight-bold">
                             <h5>{doctor.name}</h5>
                         </CardSubtitle>
-                        <p>{doctor.speciality}</p>
+                        <p className="color2">{doctor.speciality}</p>
                         <CardText>Consultation fees: {doctor.fees}</CardText>
-                        <div>S M T W T F S</div>
+                        <div className="color1">S M T W T F S</div>
                     </CardBody>
                 </Card>
+
+                </Col>
+                </Row>
+ </Container> 
                 <CarouselCaption captionText={doctor.speciality} captionHeader={doctor.name} />
             </CarouselItem>
+            
         );
     });
 
@@ -118,7 +130,7 @@ const SelectDoctor = () => {
                             </Row>
                         </div>
                     )}
-                    <Button className="mt-3 btn-primary">Next</Button>
+                    <Button className="mt-3 btn-primary"><FaArrowRight  />Next</Button>                   
                 </div>
             )}
         </Container>

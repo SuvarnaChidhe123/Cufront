@@ -5,6 +5,7 @@ import {Routes, Route, useNavigate} from 'react-router-dom';
 import {Container,Card, Form,  Row, Col, CardHeader, CardBody, FormGroup, Label, Input, Button} from "reactstrap";
 import Searchbar from "./Searchbar";
 import SelectDoctor from "./SelectDoctor";
+import { FaArrowRight } from 'react-icons/fa';
 
 
 const Patient =()=>{
@@ -15,8 +16,9 @@ const Patient =()=>{
     // 👇️ Navigate to / 
     navigate('/SelectDoctor');
   };
+  
 
-
+  
     const [formData, setFormData] = useState({
         phone: '',
         name: '',
@@ -98,8 +100,7 @@ const Patient =()=>{
             value={formData.phone}
             onChange={handleChange}
             readOnly
-          />
-
+          /> 
         <label>Name:</label>
           <input
             type="text"
@@ -177,7 +178,7 @@ const Patient =()=>{
         </div>
       </form>
     </div> 
-
+    {/* <ButtonWithIcon /> */}
     </Col>
                 </Row>
 

@@ -22,7 +22,7 @@ const CarouselCalendar = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 10,
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: false, // Remove arrows
